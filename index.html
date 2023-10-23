@@ -9,8 +9,14 @@
 </head>
 <body>
     <div id="app">
-        <h1 :class='colour'>{{message}}</h1>
+        <h1>{{message}}</h1>
         <img :src='image'>
+        <div class="icon">
+            <div :class='colour'>CAMBIA IL COLORE DELLA SCRITTA</div>
+        </div>
+        <div class="btn-wrapper">
+            <button @click="changeColour" class="btn">Cambia</button>
+        </div>
     </div>
     <script src="./js/app.js"></script>
 </body>
