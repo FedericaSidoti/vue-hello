@@ -4,7 +4,8 @@ createApp ({
     data() {
         return {
             message: 'Questo è il mio primo applicativo Vue',
-            src: 'https://picsum.photos/600/800'
+            image: 'https://picsum.photos/600/800',
+            colour: 'green'
         }
     }
 }).mount('#app')
