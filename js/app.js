@@ -12,9 +12,14 @@ createApp ({
     },
     methods: {
         changeColour: function() {
-            this.colour = this.coloursArray[this.index]
-            console.log(this.colour)
+            //console.log(this.colour)
             this.index++
+
+            if(this.index === this.coloursArray.length) {
+                this.index = 0
+            }
+
+            this.colour = this.coloursArray[this.index]
         }
     }
 }).mount('#app')
